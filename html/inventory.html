@@ -49,14 +49,14 @@
             <ul class="nav navbar-nav">
               <li><a href="../index.html">Garage</a></li>
               <li class="active"><a href="inventory.html">Inventory</a></li>
-              <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="about.html">About</a></li>
             </ul>
 
-            <div id="right">
+            <div id="searchRight">
               <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Search">
+                  <input type="search" id="searchbox" class="form-control" placeholder="Search">
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
               </form>
@@ -70,94 +70,133 @@
   </section>
 
   <!-- CAR SPECS -->
-  <div class="Inventory">
-
-    <h3 class="carModel">1971 Chevy Nova SS</h3>
-    <img src="../images/Nova.jpg" alt "71 Nova" class="novaImg" style="width:200px" />
-    <ul id="list" style="list-style:none">
-      <li>
-        <div class="col-xs-3">
-          <div class="thumbnail">
-            <!-- <a href="../images/Nova.jpg" target="_blank">
-              <img class="img-thumbnail" src="../Nova.jpg" alt "71 Nova" style="width:100%" /> -->
+  <div class="container">
+    <h3 class="carInventory">Our Current Inventory</h3>
+    <ul id="list" class="noListStyle" style="list-style:none">
+      <div class="row">
+        <li>
+          <div class="col-sm-3">
+            <div class="thumbnail">
+              <div class="carThumbTitle">1971 Chevy Nova SS</div>
+              <img class="img-thumbnail" src="../images/Nova.jpg" alt "71 Nova" style="width:200px" />
               <div class="caption">
                 <p>
-                  <br>Current Price: $25,945
-                  <br>Body Style: 2Dr Coupe
-                  <br>Engine: 8Cyl 270HP
-                  <br>Wheel Base: 111 in
-                  <br>Title & Doc Fees: $350
-                  <br>Tax: $2,075.60
+                  <br />Current Price: $25,945.00
+                  <br />Body Style: 2Dr Coupe
+                  <br />Engine: 8Cyl 270HP
+                  <br />Wheel Base: 105 in
+                  <br />Title & Doc Fees: $350.00
+                  <br />Tax: $2,155.60
                   <br class="totalPrice">
-                  <br><h4>Total Vehicle Price: 28,370.60</h4>
+                  <br />
+                  <h4>Total Vehicle Price: 29,450.60</h4>
                 </p>
               </div>
-                <!-- </a> -->
+            </div>
           </div>
-        </div>
-      </li>
+        </li>
+
+        <li>
+          <div class="col-sm-3">
+            <div class="thumbnail">
+              <div class="carThumbTitle">1968 Chevy Camaro</div>
+              <img class="img-thumbnail" src="../images/Camaro.jpg" alt "68 Camaro" style="width:200px" />
+              <div class="caption">
+                <p>
+                  <br />Current Price: $88,375.00
+                  <br />Body Style: 2Dr Coupe
+                  <br />Engine: 8Cyl 435HP
+                  <br />Wheel Base: 108 in
+                  <br />Title & Doc Fees: $350.00
+                  <br />Tax: $7070.00
+                  <br class="totalPrice">
+                  <br />
+                  <h4>Total Vehicle Price: 95,795.00</h4>
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="col-sm-3">
+            <div class="thumbnail">
+              <div class="carThumbTitle">1969 Ford Mustang Boss 302</div>
+              <img class="img-thumbnail" src="../images/Boss302.jpg" alt "69 Boss" class="carImg" style="width:200px" />
+              <div class="caption">
+                <p>
+                  <br />Current Price: $186,240.00
+                  <br />Body Style: 2Dr Coupe
+                  <br />Engine: 8Cyl 360HP
+                  <br />Wheel Base: 108 in
+                  <br />Title & Doc Fees: $350
+                  <br />Tax: $14,899.20
+                  <br class="totalPrice">
+                  <br />
+                  <h4>Total Vehicle Price: 201,489.20</h4>
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="col-sm-3">
+            <div class="thumbnail">
+              <div class="carThumbTitle">1969 Dodge Charger Hemi</div>
+              <img class="img-thumbnail" src="../images/Charger.jpg" alt "69 Charger" style="width:200px" />
+              <div class="caption">
+                <p>
+                  <br />Current Price: $252,585
+                  <br />Body Style: 2Dr Coupe
+                  <br />Engine: 8Cyl 375HP
+                  <br />Wheel Base: 111 in
+                  <br />Title & Doc Fees: $350
+                  <br />Tax: $20,206.80
+                  <br class="totalPrice">
+                  <br />
+                  <h4>Total Vehicle Price: 273,141.80</h4>
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="col-sm-3">
+            <div class="thumbnail">
+              <div class="carThumbTitle">1970 Plymouth Barracuda</div>
+              <img class="img-thumbnail" src="../images/Barracuda.jpg" alt "70 Barracuda" style="width:200px" />
+              <div class="caption">
+                <p>
+                  <br />Current Price: $88,250.00
+                  <br />Body Style: 2Dr Coupe
+                  <br />Engine: 8Cyl 425HP
+                  <br />Wheel Base: 111 in
+                  <br />Title & Doc Fees: $350
+                  <br />Tax: $7060.00
+                  <br class="totalPrice">
+                  <br />
+                  <h4>Total Vehicle Price: 95,660.00</h4>
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+      </div>
     </ul>
+  </div>
 
-    <!-- <h3 class="carModel">1968 Chevy Camaro SS</h3>
-      <p><img src="../images/Camaro.jpg" alt="68 Camaro" class="camaroImg" style="width:200px" /></p>
-      <div class="col-sm-3">
-      <li>Current Price: $122,875</li>
-      <li>Body Style: 2Dr Coupe</li>
-      <li>Engine: 8Cyl 375HP</li>
-      <li>Wheel Base: 108 in</li><br />
-      <li>Title & Doc Fees: $350</li>
-      <li>Tax: $9,830.00</li><br />
-      <li class="totalPrice">
-        <h4>Total Vehicle Price: 133,055.00</h4></li>
-      </div>
-
-      <h3 class="carModel">1969 Ford Mustang Boss 302</h3>
-      <p><img src="../images/Boss302.jpg" alt="69 Mustang" class="mustangImg" style="width:200px" /></p>
-      <div class="col-sm-3">
-      <li>Current Price: $116,400</li>
-      <li>Body Style: 2Dr Coupe</li>
-      <li>Engine: 8Cyl 290HP</li>
-      <li>Wheel Base: 108 in</li><br />
-      <li>Title & Doc Fees: $350</li>
-      <li>Tax: $9,312.00</li><br />
-      <li class="totalPrice">
-        <h4>Total Vehicle Price: 126,062.00</h4></li>
-      </div> -->
-
-
-    <!-- </div> -->
-
-
-    <!-- </div> -->
-    <!--
-70 BARRACUDA
-Current Price: $75,250
-Tax: 6,020.00
-Total:  81,620.00
-Body Style: 2Dr Coupe
-Engine: 8Cyl 330HP
-Wheel Base: 108in
-
-69 Charger
-Current Price:  $119,900
-Tax: 9,592.00
-Total:  129,842.00
-Body Style: 2Dr Coupe
-Engine: 8Cyl 335
-Wheel Base: 115in
--->
-
-
-    <!-- FOOTER -->
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <div class="container">
-      <h3><br>Chleb's Classics Site Info</h3>
-      <div class="panel panel-default">
-        <div class="panel-heading">Chleb's Classic Cars<br>3232 West Aztec Ave, Peoria, AZ 85333</div>
-        <div class="panel-body text-right">This page was updated on 24 AUG 2017</div>
-        <div class="panel-footer text-right">All site content is copyright:&nbsp&nbsp<a class="mainlink" href="#">©Chleb's Classic Cars</a></div>
-      </div>
+  <!-- FOOTER -->
+  <div id="footer" class="container">
+    <h4><br />Chleb's Classics Site Info</h4>
+    <div class="panel panel-default">
+      <div class="panel-heading">Chleb's Classic Cars<br />3232 West Aztec Ave, Peoria, AZ 85333</div>
+      <div class="panel-body text-right">This page was updated on 24 AUG 2017</div>
+      <div class="panel-footer text-right">All site content is copyright:&nbsp&nbsp<a class="mainlink" href="#">©Chleb's Classic Cars</a></div>
     </div>
+  </div>
 
 </body>
 

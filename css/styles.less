@@ -1,13 +1,15 @@
 // LESS VARIABLES
 @logo-font-family: 'Berkshire Swash';
+@about-us-font: 'Coda';
+@primary-site-font: trebuchet MS;
 // END LESS VARIABLES
 
+//GENERAL PAGE STYLES
 body {
   background-color: #DAF4EC;
 }
-.navbar {
-  font-family: Trebuchet MS;
-}
+
+body {padding-top:5px;padding-bottom:20px}input{max-width:280px}.carousel-caption p{line-height:25}.carousel-inner .item img[src$=".png"]{width:100%}@media screen and (max-width:767px){.carousel-caption{display:none}}
 
 #headerImage {
   position: static;
@@ -18,7 +20,6 @@ body {
   border-bottom: none;
   border-top: none;
   border-color: #089E6E;
-
 }
 
 #logoText {
@@ -31,34 +32,78 @@ body {
   color: #EAEDF2;
 }
 
-.carTitle {
-  font-family: Trebuchet MS;
-  font-size: 1.45em;
-  color: White;
-  margin-bottom: 350px;
+//NAVBAR STYLES
+.navbar {
+  font-family: @primary-site-font;
 }
 
-#right {
+#searchRight {
   position: absolute;
   right: 10px;
 }
 
-body {padding-top:5px;padding-bottom:20px}input{max-width:280px}.carousel-caption p{line-height:25}.carousel-inner .item img[src$=".png"]{width:100%}@media screen and (max-width:767px){.carousel-caption{display:none}}
-
-
-.novaImg {
-  margin-left: 15px;
+//FOOTER STYLES
+#footer {
+  font-family: @primary-site-font;
+  font-style: italic;
 }
 
+//CAROUSEL STYLES
+.carTitle {
+  position: relative;
+  font-family: @primary-site-font;
+  font-size: 1.45em;
+  color: White;
+}
+
+//GARAGE (INDEX) PAGE STYLES
 .video {
   position: relative;
   margin: auto;
   width: 50%;
 }
+
 #supportCorps {
+    font-family: @logo-font-family;
+    font-size: 2em;
+    text-align: center;
+}
+
+//INVENTORY PAGES STYLES
+.carInventory {
+  text-align: center;
+  font-family: @logo-font-family;
+  font-size: 2.5em;
+}
+.carThumbTitle {
+  text-align: center;
+  font-weight: bold;
+}
+
+
+//CONTACT PAGE STYLES
+#contactForm {
+  margin-left: 70px;
+}
+
+//ABOUT PAGE STYLES
+#iconMustang {
+  position: relative;
+  left: 20px;
+}
+
+#aboutText {
+  margin-left: 70px;
+  margin-right: 70px;
+  text-align: justify;
+  font-family: @primary-site-font;
+}
+
+#aboutTitle {
   font-family: @logo-font-family;
 }
-// .carousel-caption p {
-//     font-size: 20px;
-//     line-height: 1.4;
-// }
+
+#beginning {
+  font-size: 18px;
+  font-family: @about-us-font;
+}

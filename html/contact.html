@@ -49,11 +49,11 @@
             <ul class="nav navbar-nav">
               <li><a href="../index.html">Garage</a></li>
               <li><a href="inventory.html">Inventory</a></li>
-              <li><a href="about.html">About</a></li>
               <li class="active"><a href="contact.html">Contact Us</a></li>
+              <li><a href="about.html">About</a></li>
             </ul>
 
-            <div id="right">
+            <div id="searchRight">
               <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Search">
@@ -62,18 +62,44 @@
               </form>
             </div>
           </div>
-          <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
       </nav>
     </header>
   </section>
 
+  <form id="contactForm">
+    <div>
+      <legend>
+        <h3>Enter your contact information below:</h3></legend>
+      <p>
+        <label for="firstName">Last Name:&nbsp</label><input type="text" name="firstName" id="firstName" />
+        <label for="LastName">Last Name:&nbsp</label><input type="text" name="lastName" id="lastName" />
+      </p>
+      <p>
+        <label for="email">Email:&nbsp</label><input type="email" name="email" id="email" />
+      </p>
+      <p>
+        <label for="yloc">Location:&nbsp</label>
+  <select name="" id="yloc">
+    <option value="0">USA</option>
+    <option value="1">Canada</option>
+    <option value="2">UK</option>
+  </select>
+      </p>
+      <p>
+        <label for="question">Your Question Here</label><br />
+        <textarea name="question" id="" cols="50" rows="5" maxlength="500"></textarea>
+      </p>
+    </div>
+    <p>
+        <button id="btnSendInfo" class="submitbutton">Submit</button>
+    </p>
+  </form>
   <!-- FOOTER -->
-  <div class="container">
-    <h3><br>Chleb's Classics Site Info</h3>
+  <div id="footer" class="container">
+    <h4><br />Chleb's Classics Site Info</h4>
     <div class="panel panel-default">
-      <div class="panel-heading">Chleb's Classic Cars<br>3232 West Aztec Ave, Peoria, AZ 85333</div>
+      <div class="panel-heading">Chleb's Classic Cars<br />3232 West Aztec Ave, Peoria, AZ 85333</div>
       <div class="panel-body text-right">This page was updated on 24 AUG 2017</div>
       <div class="panel-footer text-right">All site content is copyright:&nbsp&nbsp<a class="mainlink" href="#">©Chleb's Classic Cars</a></div>
     </div>
