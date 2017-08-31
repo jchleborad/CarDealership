@@ -1,28 +1,7 @@
-// function myFunction() {
-//     // Declare variables
-//     var input, filter, ul, li, a, i;
-//     input = document.getElementById('searchBox');
-//     filter = input.value.toUpperCase();
-//     ul = document.getElementById("carThumb");
-//     li = ul.getElementsByTagName('li');
-//
-//     // Loop through all list items, and hide those who don't match the search query
-//     for (i = 0; i < li.length; i++) {
-//         a = li[i].getElementsByTagName("a")[0];
-//         if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-//             li[i].style.display = "";
-//         } else {
-//             li[i].style.display = "none";
-//         }
-//     }
-// }
-
-
-
-
+//INVENTORY FILTER
 (function($) {
   jQuery.expr[':'].Contains = function(a, x, m) {
-    return (a.textContent ||a.innerText|| "").toUpperCase().indexOf(m[3].toUpperCase())>= 0;
+    return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
   };
 
   function listFilter(header, list) {
@@ -48,8 +27,46 @@
 
 // alert('Sorry, No such inventory exists at this time');
 
-function salesTax (basePrice, tax) {
-  return (basePrice/100)*tax;
-}
+//CALCULATE SALES TAX & DOC FEE
+$(function() {
+  $('.bid').on('input', function() {
+    calculate();
+  });
 
-console.log(salesTax(252585, 8.00));
+  function calculate() {
+    var custBid = parseFloat($(".bid").val());
+    var taxId = "";
+    if (isNaN(custBid)) {
+      taxId = "";
+    } else {
+      taxId = ((custBid * 0.08) + 350).toFixed(2);
+    }
+    $('.taxTot').val(taxId);
+  }
+});
+
+//DISPLAY TOTAL CUSTOMER BID
+$(function() {
+  $('.bid').on('input', function() {
+    calculate();
+  });
+
+  function calculate() {
+    var custBid = parseFloat($(".bid").val());
+    var VehicleBid = "";
+    var docFee = 350;
+    if (isNaN(custBid)) {
+      VehicleBid = "";
+    } else {
+      VehicleBid = (custBid + (custBid * 0.08) + docFee).toFixed(2);
+    }
+    $('.custVehiclePrice').val(VehicleBid);
+  }
+});
+
+//EMAIL BID
+function sendMail() {
+  var link = "mailto:bids@chlebsclassiccars.com";
+
+  window.location.href = link;
+}
