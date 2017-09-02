@@ -18,7 +18,7 @@
   <script type="text/javascript" src="../bower_components/less/dist/less.js"></script>
   <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="../scripts/less.js"></script>
+  <script type="text/javascript" src="../scripts/script.js"></script>
 </head>
 
 <body>
@@ -73,49 +73,23 @@
       <li>
         <div class="col-sm-4">
           <div class="thumbnail">
-            <!-- <a href="#" target="_blank"> -->
+            <a class="removeHover">
             <br /><img class="img-rounded" src="../images/Charger.jpg" alt "70 Charger" style="width:200px" />
             <div class="caption">
                 <div class="carThumbTitle">1969 Dodge Charger</div>
                 <div class="specs">
-                  <br /><strong class="initVehiclePrice">Base Price: 252,585.00</strong>
-                  <br />Body Style: 2Dr Coupe
-                  <br />Engine: 8Cyl 375HP
-                  <br />Wheel Base: 111 in
-                  <br />Title & Doc Fees: $350
-                  <br />Current Tax: $20,206.80
+                <strong>Lot Number: 70DC2D3752U</strong>
+                <br />Body Style: 2Dr Coupe
+                <br />Engine: 8Cyl 375HP
+                <br />Wheel Base: 111 in
+                </div>
+                <div class="specs">
+                  <br /><div class="initVehiclePrice">Base Price: 252,585.00</div>
+                  Title & Doc Fees: $350
+                  <br />Tax: $20,206.80
                   <br /><strong class="totVehiclePrice">Current Sell Price: 273,141.80</strong><br />
-                  <br />Enter your Bid<br />
-                  <input type="text" class="bid" /><br />
-                  <br />Tax, Title & Doc Fees:<br />
-                  <input type="text" class="taxTot" disabled /><br />
-                  <br /><strong class="custVehicleBid">Your Total Bid:</strong><br />
-                  <input type="text" class="custVehiclePrice" disabled /><br />
-                  <button class="submitBid" onclick="sendMail(); return false">Submit Bid</button>
                 </div>
             </div>
-            <!-- </a> -->
-          </div>
-        </div>
-      </li>
-
-      <li>
-        <div class="col-sm-4">
-          <div class="thumbnail">
-            <a href="../images/Barracuda.jpg" target="_blank">
-              <br /><img class="img-rounded" src="../images/Barracuda.jpg" alt "70 Cuda" style="width:200px" />
-              <div class="caption">
-                <div class="carThumbTitle">1970 Plymouth Barracuda</div>
-                <div class="specs">
-                  <br />Current Price: $88,250<br />
-                  <br />Body Style: 2Dr Coupe
-                  <br />Engine: 8Cyl 425HP
-                  <br />Wheel Base: 111 in
-                  <br />Title & Doc Fees: $350
-                  <br />Tax: $7,060.00<br /><br />
-                  <strong class="vehiclePrice">Total Vehicle Price: $95,660.00</Strong>
-                </div>
-              </div>
             </a>
           </div>
         </div>
@@ -124,18 +98,46 @@
       <li>
         <div class="col-sm-4">
           <div class="thumbnail">
-            <a href="../images/Nova.jpg" target="_blank">
+            <a class="removeHover">
+              <br /><img class="img-rounded" src="../images/Barracuda.jpg" alt "70 Cuda" style="width:200px" />
+              <div class="caption">
+                <div class="carThumbTitle">1970 Plymouth Barracuda</div>
+                <div class="specs">
+                  <strong>Lot Number: 70PB2D4255T</strong>
+                  <br />Body Style: 2Dr Coupe
+                  <br />Engine: 8Cyl 425HP
+                  <br />Wheel Base: 111 in
+                  </div>
+                  <div class="specs">
+                  <br /><div class="initVehiclePrice">Base Price: $88,250.00</div>
+                  Title & Doc Fees: $350
+                  <br />Tax: $7,060.00
+                  <br /><strong class="totVehiclePrice">Current Sell Price: $95,660.00</strong><br />
+                </div>
+                </div>
+              </a>
+              </div>
+          </div>
+      </li>
+
+      <li>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <a class="removeHover">
             <br /><img class="img-rounded" src="../images/Nova.jpg" alt "71 Nova" style="width:200px" />
             <div class="caption">
                 <div class="carThumbTitle">1970 Chevy Nova</div>
                 <div class="specs">
-                  <br />Current Price: $25,945.00<br />
+                  <strong>Lot Number: 71CN2D42709K</strong>
                   <br />Body Style: 2Dr Coupe
                   <br />Engine: 8Cyl 270HP
                   <br />Wheel Base: 105 in
-                  <br />Title & Doc Fees: $350
-                  <br />Tax: $2,155.60<br /><br />
-                  <strong class="vehiclePrice">Total Vehicle Price: 29,450.60</strong>
+                  </div>
+                  <div class="specs">
+                  <br /><div class="initVehiclePrice">Base Price: $25,945.00</div>
+                  Title & Doc Fees: $350
+                  <br />Tax: $2,155.60
+                  <br /><strong class="totVehiclePrice">Current Sell Price: 29,450.60</strong><br />
                 </div>
             </div>
             </a>
@@ -148,18 +150,21 @@
       <li>
         <div class="col-sm-4">
           <div class="thumbnail">
-            <a href="../images/Camaro.jpg" target="_blank">
+            <a class="removeHover">
               <br /><img class="img-rounded" src="../images/Camaro.jpg" alt "68 Camaro" style="width:200px" />
               <div class="caption">
                   <div class="carThumbTitle">1968 Chevy Camaro</div>
                   <div class="specs">
-                    <br />Current Price: $88,375<br />
-                    <br />Body Style: 2Dr Coupe
+                    <strong>Lot Number: 68CC2D4354Z</strong>
+                    Body Style: 2Dr Coupe
                     <br />Engine: 8Cyl 435HP
                     <br />Wheel Base: 108 in
-                    <br />Title & Doc Fees: $350
-                    <br />Tax: $7,070.00<br /><br />
-                    <strong class="vehiclePrice">Total Vehicle Price: 95,795.00</strong>
+                    </div>
+                    <div class="specs">
+                    <br /><div class="initVehiclePrice">Base Price: $88,375</div>
+                    Title & Doc Fees: $350
+                    <br />Tax: $7,070.00
+                    <br /><strong class="totVehiclePrice">Current Sell Price: 95,795.00</strong><br />
                   </div>
               </div>
               </a>
@@ -170,18 +175,21 @@
       <li>
         <div class="col-sm-4">
           <div class="thumbnail">
-            <a href="../images/Boss302.jpg" target="_blank">
+            <a class="removeHover">
               <br /><img class="img-rounded" src="../images/Boss302.jpg" alt "69 Boss302" style="width:200px" />
               <div class="caption">
                   <div class="carThumbTitle">1969 Ford Mustang Boss 302</div>
                   <div class="specs">
-                    <br />Current Price: $186,240.00<br />
+                    <strong>Lot Number: 69FM2D3601A</strong>
                     <br />Body Style: 2Dr Coupe
                     <br />Engine: 8Cyl 360HP
                     <br />Wheel Base: 108 in
-                    <br />Title & Doc Fees: $350
-                    <br />Tax: $14,899.20<br /><br />
-                    <strong class="vehiclePrice">Total Vehicle Price: 201,489.20</strong>
+                    </div>
+                    <div class="specs">
+                    <br /><div class="initVehiclePrice">Base Price: $186,240.00</div>
+                      Title & Doc Fees: $350
+                    <br />Tax: $14,899.20
+                    <br /><strong class="totVehiclePrice">Total Vehicle Price: 201,489.20</strong><br />
                   </div>
               </div>
               </a>
@@ -192,18 +200,21 @@
       <li>
         <div class="col-sm-4">
           <div class="thumbnail">
-            <a href="../images/VWBus.jpg" target="_blank">
+            <a class="removeHover">
               <img class="img-rounded" src="../images/VWBus.jpg" alt "65 Bus" style="width:200px" />
               <div class="caption">
-                  <div class="carThumbTitle">1965 Volkwagon Bus</div>
+                  <div class="carThumbTitle">1965 Volkswagen Bus</div>
                   <div class="specs">
-                    <br />Current Price: $85,285.00<br />
+                    <strong>Lot Number: 65VB5D0536Y</strong>
                     <br />Body Style: 4/5 Dr Mini Bus
-                    <br />Engine: 8Cyl 40HP
+                    <br />Engine: 8Cyl 53HP
                     <br />Wheel Base: 94.5 in
-                    <br />Title & Doc Fees: $350
-                    <br />Tax: $6,822.80<br /><br />
-                    <strong class="vehiclePrice">Total Vehicle Price: 90,457.80</strong>
+                    </div>
+                    <div class="specs">
+                    <br /><div class="initVehiclePrice">Base Price: $85,285.00</div>
+                    Title & Doc Fees: $350
+                    <br />Tax: $6,822.80
+                    <br /><strong class="totVehiclePrice">Total Vehicle Price: 90,457.80</strong><br />
                   </div>
               </div>
               </a>
@@ -212,15 +223,33 @@
       </li>
     </div>
   </ul>
-
+  <section>
+    <div class="col-md-8 col-md-offset-2">
+      <div class="thumbnail">
+        <form id="bidForm">
+          <br />Car you are bidding on<br />
+          Vehicle Description <input type="text" id="bidCar"/>
+          Lot Number <input type="text" id="lotId"/><br />
+          <br />Enter your Bid<br />
+          <input type="text" class="bid" /><br />
+          <br />Tax, Title & Doc Fees:<br />
+          <input type="text" class="taxTot" disabled /><br />
+          <br /><strong id="custVehicleBid">Your Total Bid:</strong><br />
+          <input type="text" id="custVehiclePrice" disabled /><br />
+          <button class="submitBid" onclick="sendBid(); return false">Submit Bid</button><br />
+        </form>
+      </div>
+    </div>
+  </section>
 
   <!-- FOOTER -->
+  <!-- TODO Lindsey - how to place footer without all these breaks -->
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
   <div id="footer" class="container">
     <h4><br />Chleb's Classics Site Info</h4>
     <div class="panel panel-default">
-      <div class="panel-heading">Chleb's Classic Cars<br />3232 West Aztec Ave, Peoria, AZ 85333</div>
-      <div class="panel-body text-right">This page was updated on 24 AUG 2017</div>
-      <div class="panel-footer text-right">All site content is copyright:&nbsp&nbsp<a class="mainlink" href="#">©Chleb's Classic Cars</a></div>
+      <div class="panel-heading">Chleb's Classic Cars<br />3232 West Aztec Ave, Peoria, AZ 85333<br /><a href="mailto:info@chlebsclassiccars.com">info@chlebsclassiccars.com</a></div>
+          <div class="panel-footer text-right">All site content is copyright:&nbsp&nbsp<a class="mainlink" href="../index.html">©Chleb's Classic Cars</a></div>
     </div>
   </div>
 </body>
