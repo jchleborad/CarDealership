@@ -8,6 +8,8 @@
     $('#searchBox')
       .change(function() {
         var filter = $(this).val();
+//ifstatement for alert here
+// alert('Sorry, No such inventory exists at this time');
         if (filter) {
           $(list).find("a:not(:Contains(" + filter + "))").parent().slideUp();
           $(list).find("a:Contains(" + filter + ")").parent().slideDown();
@@ -26,7 +28,6 @@
 }(jQuery));
 
 // TODO Get Alert to work
-// alert('Sorry, No such inventory exists at this time');
 
 //CALCULATE SALES TAX & DOC FEE
 $(function() {
@@ -68,7 +69,7 @@ $(function() {
 // TODO Line breaks?  \n not working....
 //EMAIL BID
 function sendBid() {
-  var bidCar= document.getElementById("bidCar").value;
+  var bidCar = document.getElementById("bidCar").value;
   var custPrice = document.getElementById("custVehiclePrice").value;
   var lotId = document.getElementById("lotId").value;
   window.location.href = "mailto:bids@chlebsclassiccars.com?subject= Please Review My Bid&body=" + "My bid for the " + bidCar + " (Lot ID:" + lotId + ") " + "is: $" + custPrice + ". %0A%0A" + "Please respond as soon as possible." + "%0A%0A";
