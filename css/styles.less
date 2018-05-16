@@ -1,15 +1,34 @@
 // LESS VARIABLES
 @logo-font-family: 'Berkshire Swash';
 @about-us-font: 'Coda';
-@primary-site-font: trebuchet MS;
-// END LESS VARIABLES
-
+@primary-site-font: trebuchet MS; // END LESS VARIABLES
 //GENERAL PAGE STYLES
+
 body {
   background-color: #DAF4EC;
 }
 
-body {padding-top:5px;padding-bottom:20px}input{max-width:280px}.carousel-caption p{line-height:25}.carousel-inner .item img[src$=".png"]{width:100%}@media screen and (max-width:767px){.carousel-caption{display:none}}
+body {
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+input {
+  max-width: 280px;
+}
+
+.carousel-caption p {
+  line-height: 25;
+}
+
+.carousel-inner .item img[src$=".png"] {
+  width: 100%;
+}
+@media screen and (max-width:767px) {
+  .carousel-caption {
+    display: none;
+  }
+}
 
 #headerImage {
   position: static;
@@ -24,15 +43,15 @@ body {padding-top:5px;padding-bottom:20px}input{max-width:280px}.carousel-captio
 
 #logoText {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 170px;
   font-family: @logo-font-family;
   font-size: 6em;
   -webkit-text-stroke: 2px black;
   color: #EAEDF2;
 }
-
 //NAVBAR STYLES
+
 .navbar {
   font-family: @primary-site-font;
 }
@@ -41,14 +60,14 @@ body {padding-top:5px;padding-bottom:20px}input{max-width:280px}.carousel-captio
   position: absolute;
   right: 10px;
 }
-
 //FOOTER STYLES
+
 #footer {
   font-family: @primary-site-font;
   font-style: italic;
 }
-
 //CAROUSEL STYLES
+
 .carTitle {
   position: relative;
   font-family: @primary-site-font;
@@ -60,8 +79,8 @@ body {padding-top:5px;padding-bottom:20px}input{max-width:280px}.carousel-captio
   width: 625px;
   margin: auto;
 }
-
 //GARAGE (INDEX) PAGE STYLES
+
 .video {
   position: relative;
   margin: auto;
@@ -69,17 +88,18 @@ body {padding-top:5px;padding-bottom:20px}input{max-width:280px}.carousel-captio
 }
 
 #supportCorps {
-    font-family: @logo-font-family;
-    font-size: 2em;
-    text-align: center;
+  font-family: @logo-font-family;
+  font-size: 2em;
+  text-align: center;
 }
-
 //INVENTORY PAGES STYLES
+
 .specs {
   text-align: center;
   font-family: @primary-site-font;
-  font-size: 14px ;
+  font-size: 14px;
 }
+
 .carThumbTitle {
   text-align: center;
   font-size: 1.25em;
@@ -130,13 +150,13 @@ body {padding-top:5px;padding-bottom:20px}input{max-width:280px}.carousel-captio
 .removeHover {
   pointer-events: none;
 }
-
 //CONTACT PAGE STYLES
+
 #contactForm {
   margin-left: 70px;
 }
-
 //ABOUT PAGE STYLES
+
 #iconMustang {
   position: relative;
   left: 70px;
@@ -161,4 +181,24 @@ body {padding-top:5px;padding-bottom:20px}input{max-width:280px}.carousel-captio
 #footer {
   width: 100%;
   height: 100%;
+  padding-top: 325px;
+}
+
+//LANDING PAGE
+
+.landing {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 50px;
+  background-color: #ccc;
+  border-radius: 3px;
+  padding: 15px;
+  text-align: center;
+  font-family: @logo-font-family;
+  font-size: 2rem;
 }
